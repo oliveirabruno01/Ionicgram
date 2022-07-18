@@ -1,0 +1,7 @@
+{
+  "name": "Ionicgram",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
