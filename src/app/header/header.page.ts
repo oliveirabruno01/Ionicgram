@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -6,7 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['header.page.scss']
 })
 export class HeaderPage {
+  constructor(private router: Router) {}
 
-  constructor() {}
+  getPath() {
+    return this.router.url.split('/')[2]
+  }
 
 }

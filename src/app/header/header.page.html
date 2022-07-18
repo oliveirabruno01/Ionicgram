@@ -21,15 +21,15 @@
           <ion-row>
 
             <ion-tab-button tab="tab1" mode="ios">
-              <ion-icon name="home-outline"></ion-icon>
+              <ion-icon name="{{ this.getPath() == 'tab1' ? 'home' : 'home-outline' }}"></ion-icon>
             </ion-tab-button>
         
             <ion-tab-button tab="tab2" mode="ios">
-              <ion-icon name="send-outline"></ion-icon>
+              <ion-icon name="{{ this.getPath() == 'tab2' ? 'send' : 'send-outline' }}"></ion-icon>
             </ion-tab-button>
         
             <ion-tab-button tab="tab3" mode="ios">
-              <ion-icon name="compass-outline"></ion-icon>
+              <ion-icon name="{{ this.getPath() == 'tab3' ? 'compass' : 'compass-outline' }}"></ion-icon>
             </ion-tab-button>
 
           </ion-row>
