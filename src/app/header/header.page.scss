@@ -10,6 +10,13 @@ ion-tab-bar {
         margin: 0 .4rem;
     }
 
+    ion-searchbar {
+        --border-radius: 10px !important;
+        --box-shadow: none !important;
+        --color: #000 !important;
+        --background: #EFEFEF;
+    }
+
     #links {
         justify-content: end;
     }
