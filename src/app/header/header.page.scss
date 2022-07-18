@@ -6,10 +6,6 @@
 ion-tab-bar {
     padding: 0 2rem;
 
-    ion-tab-button {
-        margin: 0 .4rem;
-    }
-
     ion-searchbar {
         --border-radius: 10px !important;
         --box-shadow: none !important;
@@ -17,8 +13,20 @@ ion-tab-bar {
         --background: #EFEFEF;
     }
 
-    #links {
+    ion-tab-button {
+        margin: 0 .4rem;
+    }
+
+    #tabs-links {
         justify-content: end;
+
+        // REMOVE ICON's DEFAULT TOOLTIP
+        ion-icon:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
