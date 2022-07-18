@@ -4,31 +4,31 @@ import { HeaderPage } from './header.page';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: HeaderPage,
     children: [
       {
-        path: 'tab1',
+        path: 'home',
         loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
       },
       {
-        path: 'tab2',
+        path: 'direct',
         loadChildren: () => import('../direct/direct.module').then(m => m.DirectPageModule)
       },
       {
-        path: 'tab3',
+        path: 'explore',
         loadChildren: () => import('../explore/explore.module').then(m => m.ExplorePageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/home',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/home',
     pathMatch: 'full'
   }
 ];

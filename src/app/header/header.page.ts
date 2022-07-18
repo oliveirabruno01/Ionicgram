@@ -10,7 +10,7 @@ export class HeaderPage {
   constructor(private router: Router) {}
 
   getPath() {
-    return this.router.url.split('/')[2]
+    return this.router.url.split('/')[1]
   }
 
 }
