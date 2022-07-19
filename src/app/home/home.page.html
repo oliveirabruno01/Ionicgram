@@ -1,11 +1,16 @@
 <ion-content [fullscreen]="true">
   <ion-grid>
-    <div class="stories">
-      <div class="storie-view-state">
-        <div class="storie">
-          <img src="../../assets/image.jpg" alt="">
-        </div>
-      </div>
-    </div>
+    <ion-row id="stories">
+      <swiper [slidesPerView]="6">
+        <!-- experimental -->
+        <ng-template swiperSlide *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+          <div class="storie-view-state">
+            <div class="storie">
+              <img src="../../assets/image.jpg" alt="">
+            </div>
+          </div>
+        </ng-template>
+      </swiper>
+    </ion-row>
   </ion-grid>
 </ion-content>

@@ -9,4 +9,11 @@ export class HomePage {
 
   constructor() {}
 
+  onInit() {
+  }
+
+  range(end) {
+    return Array(end).map((_, idx) => idx);
+  }
+
 }
