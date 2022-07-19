@@ -17,6 +17,7 @@ ion-tab-bar {
         // REMOVE ICON's DEFAULT TOOLTIP
         ion-icon {
             font-size: 24px;
+            color: #000;
         }
         ion-icon:before {
             content: '';
@@ -27,6 +28,7 @@ ion-tab-bar {
     }
 
     #tabs-links {
+        display: flex;
         justify-content: end;
     }
 }
