@@ -33,3 +33,9 @@ ion-grid {
     border-radius: 50%;
     overflow: hidden;
 }
+
+@media screen and (max-width: 930px){
+    ion-grid {
+        display: block;
+    }
+}
