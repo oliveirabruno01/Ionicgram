@@ -50,5 +50,17 @@
       </ion-row>
     </ion-grid>
   </ion-tab-bar>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" class="ion-padding-bottom hidden-desktop">
+      <ion-icon name="{{ this.getPath() == 'home' ? 'home' : 'home-outline' }}"></ion-icon>
+    </ion-tab-button>
 
+    <ion-tab-button tab="explore" class="ion-padding-bottom hidden-desktop">
+      <ion-icon name="{{ this.getPath() == 'explore' ? 'compass' : 'compass-outline' }}"></ion-icon>
+    </ion-tab-button>
+
+    <ion-tab-button class="ion-padding-bottom hidden-desktop">
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-tab-button>
+  </ion-tab-bar>
 </ion-tabs>
