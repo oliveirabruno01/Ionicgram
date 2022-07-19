@@ -1,0 +1,23 @@
+.storie-view-state {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsla(46, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(46, 100%, 50%, 1) 0%, hsla(320, 100%, 45%, 1) 50%, hsla(358, 100%, 78%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(46, 100%, 50%, 1) 0%, hsla(320, 100%, 45%, 1) 50%, hsla(358, 100%, 78%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(46, 100%, 50%, 1) 0%, hsla(320, 100%, 45%, 1) 50%, hsla(358, 100%, 78%, 1) 100%);
+}
+
+.stories {
+    padding: 1.2rem 1.2rem;
+}
+.storie {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+}
