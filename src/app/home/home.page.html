@@ -1,22 +1,24 @@
 <ion-content [fullscreen]="true">
-    <ion-row id="stories">
-      <swiper [slidesPerView]="6" class="swiper">
-        <!-- experimental -->
-        <ng-template swiperSlide *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
-          <div class="reels">
-            <div class="storie-view-state">
-              <div class="storie">
-                <img src="../../assets/image.jpg" alt="">
+    <div id="home-content">
+      <ion-row id="stories">
+        <swiper [slidesPerView]="6" class="swiper">
+          <!-- experimental -->
+          <ng-template swiperSlide *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+            <div class="reels">
+              <div class="storie-view-state">
+                <div class="storie">
+                  <img src="../../assets/image.jpg" alt="">
+                </div>
               </div>
+              <h6>{{ x }}</h6>
             </div>
-            <h6>{{ x }}</h6>
-          </div>
-        </ng-template>
-      </swiper>
-    </ion-row>
-    <ion-row class="content">
-      <app-post></app-post>
-      <app-post></app-post>
-      <app-post></app-post>
-    </ion-row>
+          </ng-template>
+        </swiper>
+      </ion-row>
+      <ion-col class="content">
+        <app-post></app-post>
+        <app-post></app-post>
+        <app-post></app-post>
+      </ion-col>
+    </div>
 </ion-content>
