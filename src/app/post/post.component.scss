@@ -1,0 +1,42 @@
+.profile-info {
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 .5rem;
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .profile-reels-state {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 8px;
+    
+        background: hsla(46, 100%, 50%, 1);
+        background: linear-gradient(90deg, hsla(46, 100%, 50%, 1) 0%, hsla(320, 100%, 45%, 1) 50%, hsla(358, 100%, 78%, 1) 100%);
+        background: -moz-linear-gradient(90deg, hsla(46, 100%, 50%, 1) 0%, hsla(320, 100%, 45%, 1) 50%, hsla(358, 100%, 78%, 1) 100%);
+        background: -webkit-linear-gradient(90deg, hsla(46, 100%, 50%, 1) 0%, hsla(320, 100%, 45%, 1) 50%, hsla(358, 100%, 78%, 1) 100%);
+        
+        .profile {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+    
+    h6 {
+        font-size: .67em;
+    }
+
+    ion-button {
+        right: 10px;
+    }
+}
