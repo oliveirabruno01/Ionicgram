@@ -33,7 +33,7 @@ ion-tab-bar {
     }
 }
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 916px){
     .hidden-mobile {
         display: none !important;
     }
@@ -48,7 +48,7 @@ ion-tab-bar {
     }
 }
 
-@media screen and (min-width: 512px){
+@media screen and (min-width: 916px){
     .hidden-desktop {
         display: none !important;
     }
@@ -62,5 +62,9 @@ ion-tab-bar {
 @media screen and (max-width: 512px){
     ion-tab-button {
         margin: 0 !important;
+    }
+
+    #search-container {
+        display: none;
     }
 }
