@@ -46,11 +46,15 @@
 
 @media screen and (max-width: 512px){
     #stories {
-        margin: .5rem 0rem;
+        margin: .5rem 0rem 0;
         padding: 0;
         padding-bottom: 1rem;
         border: none;
         border-bottom: 1px solid lightgray;
+    }
+
+    .content {
+        padding: 0;
     }
 }
 
@@ -62,7 +66,6 @@
         
         #stories {
             max-width: 512px;
-            margin-bottom: 0;
         }
     }
 }
