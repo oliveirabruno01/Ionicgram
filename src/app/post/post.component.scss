@@ -2,6 +2,19 @@ ion-grid {
     margin-top: 1.5em;
     border: .2px solid lightgray;
     padding: 0;
+
+    .post-info {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        .post-actions { 
+            justify-content: space-between;
+
+            ion-icon {
+                margin: 0 .3em;
+            }
+        }
+    }
 }
 
 .profile-info {
