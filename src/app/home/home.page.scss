@@ -6,8 +6,8 @@
     border-radius: 5px;
 
     .storie-view-state {
-        width: 78px;
-        height: 78px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
         overflow: hidden;
         display: flex;
@@ -21,18 +21,37 @@
         background: -webkit-linear-gradient(90deg, hsla(46, 100%, 50%, 1) 0%, hsla(320, 100%, 45%, 1) 50%, hsla(358, 100%, 78%, 1) 100%);
         
         .storie {
-            width: 72px;
-            height: 72px;
+            width: 66px;
+            height: 66px;
             border-radius: 50%;
             overflow: hidden;
+        }
+    }
+
+    .reels {
+        display: flex;
+        flex-direction: column;
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        h6 {
+            margin-top: .4em;
+            font-size: .67em;
         }
     }
 }
 
 @media screen and (max-width: 930px){
     #stories {
-        margin: 0 2rem;
+        margin: .5rem 2rem;
         padding: 0;
         border: none;
+    }
+    
+    .content {
+        border-top: .1rem solid lightgray !important;
     }
 }
