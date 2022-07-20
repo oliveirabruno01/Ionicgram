@@ -44,7 +44,7 @@
     }
 }
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 512px){
     #stories {
         margin: .5rem 0rem;
         padding: 0;
@@ -54,7 +54,7 @@
     }
 }
 
-@media screen and (min-width: 930px){
+@media screen and (min-width: 512px){
     #home-content {
         display: flex;
         flex-direction: column;
