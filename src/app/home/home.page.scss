@@ -48,11 +48,9 @@
     #stories {
         margin: .5rem 0rem;
         padding: 0;
+        padding-bottom: 1rem;
         border: none;
-    }
-    
-    .content {
-        border-top: .1rem solid lightgray !important;
+        border-bottom: 1px solid lightgray;
     }
 }
 
@@ -64,6 +62,7 @@
         
         #stories {
             max-width: 512px;
+            margin-bottom: 0;
         }
     }
 }
