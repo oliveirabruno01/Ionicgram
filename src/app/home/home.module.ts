@@ -7,6 +7,7 @@ import { HomePage } from './home.page';
 import { PostComponent } from '../post/post.component';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { SuggestionCardComponent } from '../suggestion-card/suggestion-card.component';
 
 @NgModule({
   imports: [
@@ -14,8 +15,8 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     HomePageRoutingModule,
-    SwiperModule
+    SwiperModule,
   ],
-  declarations: [HomePage, PostComponent]
+  declarations: [HomePage, PostComponent, SuggestionCardComponent]
 })
 export class HomePageModule {}
