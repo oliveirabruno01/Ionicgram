@@ -1,7 +1,7 @@
 #stories {
     width: 600px;
-    margin: 2rem;
-    padding: 2rem 0;
+    margin-top: 2rem;
+    padding: 1.3rem .2rem;
     border: 1px solid lightgray;
     border-radius: 5px;
 
@@ -66,6 +66,7 @@
         
         #stories {
             max-width: 512px;
+            margin-bottom: 0;
         }
     }
 }
