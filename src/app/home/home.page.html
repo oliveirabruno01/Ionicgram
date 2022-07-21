@@ -1,24 +1,42 @@
 <ion-content [fullscreen]="true">
-    <div id="home-content">
-      <ion-row id="stories">
-        <swiper [slidesPerView]="6" class="swiper">
-          <!-- experimental -->
-          <ng-template swiperSlide *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
-            <div class="reels">
-              <div class="storie-view-state">
-                <div class="storie">
-                  <img src="../../assets/image.jpg" alt="">
+    <ion-col id="home-content" sizeXl="6" no-padding>
+        <ion-row id="stories">
+          <swiper [slidesPerView]="6" class="swiper">
+            <!-- experimental -->
+            <ng-template swiperSlide *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+              <div class="reels">
+                <div class="storie-view-state">
+                  <div class="storie">
+                    <img src="../../assets/image.jpg" alt="">
+                  </div>
                 </div>
+                <h6>{{ x }}</h6>
               </div>
-              <h6>{{ x }}</h6>
-            </div>
-          </ng-template>
-        </swiper>
+            </ng-template>
+          </swiper>
+        </ion-row>
+        <ion-col class="content">
+          <app-post></app-post>
+          <app-post></app-post>
+          <app-post></app-post>
+        </ion-col>
+    </ion-col>
+
+    <ion-col id="lateral">
+      <ion-row class="lateral-item">
+        <div class="profile-row">
+          <img class="self-profile" src="../../assets/image.jpg" alt="">
+          <ion-label class="ion-align-self-center ion-padding-start">
+          <p><b>fulano</b></p>
+          <p>Fulano Brasileiro</p>
+        </ion-label>
+        </div>
+        <a href="#" class="ion-align-self-center ion-padding-start">Mudar</a>
+      
       </ion-row>
-      <ion-col class="content">
-        <app-post></app-post>
-        <app-post></app-post>
-        <app-post></app-post>
-      </ion-col>
-    </div>
+      <ion-row id="sugestions-text" class="ion-margin-top ion-justify-content-between">
+        <p id="sugestions-label" class="ion-align-self-center"><b>Sugestões para você.</b></p>
+        <a href="#" class="ion-align-self-center">Ver tudo</a>
+      </ion-row>
+    </ion-col>
 </ion-content>

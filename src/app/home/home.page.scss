@@ -71,3 +71,74 @@
     }
 }
 
+@media screen and (max-width: 1200px){
+    #lateral {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px){
+    ion-grid {
+        flex-direction: row;
+    }
+
+    #home-content {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: end;
+        
+        
+        #stories {
+            max-width: 512px;
+            margin-bottom: 0;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+    }
+
+    #lateral {
+        margin-top: 2.4rem;
+        margin-left: 2.5rem;
+        position: absolute;
+        height: 50%;
+
+        .lateral-item {
+            max-width: 25rem;
+            justify-content: space-between;
+
+            .profile-row {
+                display: flex;
+
+                .self-profile {
+                    width: 66px;
+                    height: 66px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color:rgb(0, 162, 255)
+            }
+        }
+
+        #sugestions-text {
+            max-width: 24rem;
+            #sugestions-label {
+                color: lightslategray;
+            }
+    
+            a {
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+
