@@ -60,6 +60,10 @@ ion-tab-bar {
 }
 
 @media screen and (max-width: 512px){
+    ion-tab-bar {
+        border-bottom: 0;
+    }
+
     ion-tab-button {
         margin: 0 !important;
     }
