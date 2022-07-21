@@ -59,12 +59,18 @@ ion-tab-bar {
     
 }
 
-@media screen and (max-width: 512px){
-    ion-tab-button {
-        margin: 0 !important;
+@media screen and (max-width: 512px) {
+    ion-tab-bar {
+        border-bottom: none;
     }
 
-    #search-container {
-        display: none;
+    ion-tab-bar {
+        ion-tab-button {
+            margin: 0 !important;
+        }
+    
+        #search-container {
+            display: none;
+        }
     }
 }
