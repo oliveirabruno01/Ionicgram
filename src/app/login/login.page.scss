@@ -133,11 +133,13 @@ footer {
     footer {
         font-size: .75rem;
         margin: 0;
-        padding: 0;
+
+        #links {
+            text-align: start !important;
+        }
 
         * {
             margin: 0;
-            padding: 0;
         }
     }
     #bottom {
