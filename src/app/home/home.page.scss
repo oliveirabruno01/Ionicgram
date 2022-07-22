@@ -148,6 +148,21 @@
                 font-weight: bold;
             }
         }
+
+        #links {
+            max-width: 18rem;
+
+            a {
+                text-decoration: none;
+                font-size: .72rem;
+                color: gray;
+            }
+        }
+
+        #copyright {
+            font-size: .72rem;
+            color: gray;
+        }
     }
 }
 
