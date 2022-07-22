@@ -148,3 +148,20 @@ footer {
         padding: 0;
     }
 }
+
+@media screen and (max-width: 375px){
+    #downloads {
+        ion-img {
+            width: 100px;
+        }
+    }
+
+    input {
+        max-width: 290px;
+    }
+
+    button {
+        max-width: 290px;
+    }
+}
+
