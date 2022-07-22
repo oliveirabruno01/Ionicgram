@@ -3,8 +3,31 @@
     <ion-col id="login-mockup">
       <img src="../../assets/start_imgs/two.png" alt="">
     </ion-col>
+
     <ion-col id="login-form">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fuga, accusantium tempore amet iure officia deleniti ea, nemo maiores voluptas veritatis iste blanditiis dolores minima, quas facilis maxime. Ab tenetur, corrupti fuga nemo impedit saepe magnam tempore amet! Architecto necessitatibus unde autem veritatis, sint quos vel fugit aliquam tempora ex?
+      <div id="container">
+        <img src="../../assets/logo-lg.png" alt=""/>
+        <form id="form" action="">
+          <input class="ion-padding" type="text" name="user" id="user-input" placeholder="Telefone, nome de usuário ou email">
+          <input class="ion-padding" type="password" name="password" id="password-input" placeholder="Senha">
+          <button type="submit" disabled><h3>Entrar</h3></button>
+        </form>
+        <p>OU</p>
+        <p id="facebook-action">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <b>Entrar com Facebook</b></p>
+        <span>Esqueceu a senha?</span>
+      </div>
+
+      <div id="register">
+        <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
+      </div>
+
+      <p>Obtenha o aplicativo.</p>
+      <ion-row id="downloads">
+        <ion-img src="../../assets/app-store-logo.png" alt=""></ion-img>
+        <ion-img src="../../assets/play-store-logo.png" alt=""></ion-img>
+      </ion-row>
     </ion-col>
   </ion-row>
 </ion-content>

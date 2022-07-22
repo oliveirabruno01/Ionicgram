@@ -1,7 +1,7 @@
 #login-content {
     justify-content: center;
     height: 100vh;
-    align-items: center;
+    margin-top: 4.5rem;
 
     #login-mockup {
         max-width: 512px;
@@ -17,14 +17,94 @@
     }
 
     #login-form {
-        background-color: antiquewhite;
         max-width: 512px;
-        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid lightgray;
+            padding: 1.5rem 3rem;
+
+            img {
+                width: 60%;
+            }
+
+            #form {
+                margin: 1.5rem 0 1.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                input {
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    border-radius: 5px;
+                    margin-bottom: 1rem;
+                    width: 350px;
+                }
+
+                button {
+                    width: 350px;
+                    border-radius: 10px;
+                    background-color: #3880ff;
+                }
+
+                button:disabled {
+                    background-color: rgb(164, 216, 233);
+                }
+            }
+
+            #facebook-action {
+                color: #3880ff;
+                text-align: center;
+                display: flex;
+                align-items: center;
+
+                b {
+                    margin-left: .2rem;
+                };
+            }
+        }
+
+        #register {
+            margin-top: 1rem;;
+            padding: 2rem;
+            width: 448px;
+            border: 1px solid lightgray;
+            display: flex;
+            flex-direction: row;
+
+            p {
+                margin: auto;
+            }
+        }
+        #downloads {
+            ion-img {
+                max-width: 150px;
+                margin-right: 1rem;
+            }
+        }
     }
 }
 
-@media screen and (max-width: 512px){
+@media screen and (max-width: 912px){
     #login-mockup {
         display: none;
+    }
+
+    #login-content {
+        #login-form {
+            #container {
+                border: none;
+            }
+            
+            #register {
+                border: none;
+            }
+        }
     }
 }
