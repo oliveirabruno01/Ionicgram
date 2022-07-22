@@ -1,6 +1,5 @@
 #login-content {
     justify-content: center;
-    height: 100vh;
     margin-top: 4.5rem;
 
     #login-mockup {
@@ -89,6 +88,27 @@
             }
         }
     }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 5rem;
+    #links {
+        width: 75%;
+
+        a {
+            text-decoration: none;
+            margin-left: 1.5rem;
+            color: gray;
+        }
+    }
+}
+
+#bottom {
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 912px){
