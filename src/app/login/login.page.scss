@@ -128,3 +128,21 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    footer {
+        font-size: .75rem;
+        margin: 0;
+        padding: 0;
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    #bottom {
+        font-size: .75rem;
+        margin: 0;
+        padding: 0;
+    }
+}
