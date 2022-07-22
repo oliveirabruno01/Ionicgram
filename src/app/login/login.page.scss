@@ -7,11 +7,33 @@
         height: 586px;
         background-image: url("../../assets/start_imgs/background-mockup.png");
         
-        img {
+        #parallax {
+            position: absolute;
+            height: 90.5%;
+            top: 1.6rem;
+            left: 10rem;
+            background-color: #888b915e;
+            height: 92%;
+            width: 15.1rem;
+
+            border-radius: 15px;
+
+            transition: .3s ease-in-out;
+
+            z-index: 99;
+        }
+
+        #parallax.hidden {
+            transition: .3s ease-out;
+            background-color: #888b9100;
+            z-index: -3;
+        }
+
+        img { 
             position: relative;
             height: 93.5%;
             top: 1.2rem;
-            left: 9.45rem;    
+            left: 9.45rem;
         }
     }
 
