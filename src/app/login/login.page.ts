@@ -21,7 +21,7 @@ export class LoginPage implements OnInit {
         this.image = '../../assets/start_imgs/' + this.nextImage();
       }, 300)
       this.parallaxIsHidden = false;
-    }, 4000)
+    }, 5000)
 
   }
 

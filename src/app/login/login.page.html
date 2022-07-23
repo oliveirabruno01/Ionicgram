@@ -2,7 +2,7 @@
   <ion-row id="login-content">
     <ion-col id="login-mockup">
       <div id="parallax" ngClass="{{ this.parallaxIsHidden ? 'hidden': '' }}"></div>
-      <img src="{{this.image}}" alt="" #imageMockup>
+      <img src="{{this.image}}" ngClass="{{ this.parallaxIsHidden ? '': 'hidden' }}" alt="" #imageMockup>
     </ion-col>
 
     <ion-col id="login-form">
