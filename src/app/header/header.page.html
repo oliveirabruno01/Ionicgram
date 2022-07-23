@@ -20,7 +20,7 @@
         <ion-col id="tabs-links">
           <ion-row>
 
-            <ion-tab-button tab="home" class="hidden-mobile">
+            <ion-tab-button tab="/home" class="hidden-mobile">
               <ion-icon name="{{ this.getPath() == 'home' ? 'home' : 'home-outline' }}"></ion-icon>
             </ion-tab-button>
 
@@ -50,15 +50,15 @@
     </ion-grid>
   </ion-tab-bar>
   <ion-tab-bar slot="bottom" class="hidden-desktop">
-    <ion-tab-button tab="home" class="ion-padding-bottom hidden-desktop">
-      <ion-icon size="small" name="{{ this.getPath() == 'home' ? 'home' : 'home-outline' }}"></ion-icon>
+    <ion-tab-button tab="/home" class="ion-padding-bottom">
+      <ion-icon name="{{ this.getPath() == 'home' ? 'home' : 'home-outline' }}"></ion-icon>
     </ion-tab-button>
 
-    <ion-tab-button tab="explore" class="ion-padding-bottom hidden-desktop">
+    <ion-tab-button tab="explore" class="ion-padding-bottom">
       <ion-icon size="small" name="{{ this.getPath() == 'explore' ? 'compass' : 'compass-outline' }}"></ion-icon>
     </ion-tab-button>
 
-    <ion-tab-button class="ion-padding-bottom hidden-desktop">
+    <ion-tab-button class="ion-padding-bottom">
       <ion-icon size="small" name="person-outline"></ion-icon>
     </ion-tab-button>
     
