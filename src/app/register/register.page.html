@@ -1,0 +1,61 @@
+<ion-content>
+  <ion-row id="register-content">
+    <ion-col id="register-form">
+      <div id="container">
+        <img src="../../assets/logo-lg.png" alt=""/>
+        <p><b>Cadastre-se para ver fotos e vídeos dos seus amigos.</b></p>
+        <button id="facebook-action">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <b>Entrar com Facebook</b>
+        </button>
+        <form id="form" action="">
+          <input type="text" name="account" id="account-input" placeholder="Número do celular ou email">
+          <input type="text" name="user" id="name-input" placeholder="Nome completo">
+          <input type="text" name="user" id="user-input" placeholder="Nome de usuário">
+          <input type="password" name="password" id="password-input" placeholder="Senha">
+          <p>As pessoas que usam nosso serviço podem ter carregado suas informações de contato no Instagram. Saiba mais</p>
+          <p>Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de Cookies.</p>
+          <button type="submit" [routerLink]="['home']"><h3>Cadastre-se</h3></button>
+        </form>
+      </div>
+
+      <div id="login">
+        <p>Tem uma conta? <a href="">Conecte-se</a></p>
+      </div>
+
+      <p>Obtenha o aplicativo.</p>
+      <ion-row id="downloads">
+        <ion-img src="../../assets/app-store-logo.png" alt=""></ion-img>
+        <ion-img src="../../assets/play-store-logo.png" alt=""></ion-img>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <footer>
+    <div id="links" class="ion-text-center">
+      <a href="">Meta </a>
+      <a href="">Sobre </a>
+      <a href="">Blog </a>
+      <a href="">Carreiras </a>
+      <a href="">Ajuda </a>
+      <a href="">API </a>
+      <a href="">Privacidade </a>
+      <a href="">Termos </a>
+      <a href="">Principais contas </a>
+      <a href="">Hashtags </a>
+      <a href="">Localizações </a>
+      <a href="">Instagram Lite </a>
+      <a href="">Carregamento de contatos e  não usuários </a>
+      <a href="">Dança </a>
+      <a href="">Comida e bebida </a>
+      <a href="">Casa e jardim </a>
+      <a href="">Música </a>
+      <a href="">Artes visuais </a>
+    </div>
+  </footer>
+  <div id="bottom">
+    <p class="ion-margin">Português (Brasil)
+      <ion-icon name="arrow-down"></ion-icon>
+    </p> 
+    <p class="ion-margin">&copy; 2022 Ionicgram from Bruno</p>
+  </div>
+</ion-content>

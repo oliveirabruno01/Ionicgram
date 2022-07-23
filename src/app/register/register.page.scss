@@ -1,0 +1,177 @@
+#register-content {
+    justify-content: center;
+    margin-top: 2.5rem;
+
+    #register-form {
+        max-width: 344px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid lightgray;
+            padding: 2.5rem 3rem .5rem;
+
+            img {
+                width: 45%;
+            }
+
+            p {
+                color: gray;
+            }
+
+            #form {
+                margin: .5rem 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                input {
+                    background-color: white;
+                    border: 1px solid lightgray;
+                    border-radius: 5px;
+                    margin-bottom: .8rem;
+                    width: 300px;
+
+                    padding: .5rem 1rem;
+                }
+
+                button {
+                    width: 350px;
+                    border-radius: 10px;
+                    background-color: #3880ff;
+                }
+
+                button:disabled {
+                    background-color: rgb(164, 216, 233);
+                }
+
+                p {
+                    text-align: center;
+                    font-size: .74rem;
+                    color: gray;
+                }
+            }
+
+            #facebook-action {
+                background-color: #2767d6;
+                color: white;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: .8rem;
+                border-radius: 5px;
+                width: 300px;
+
+                b {
+                    margin-left: .2rem;
+                }
+            }
+        }
+
+        #login {
+            margin-top: 1rem;;
+            padding: 1.2rem;
+            width: 448px;
+            border: 1px solid lightgray;
+            display: flex;
+            flex-direction: row;
+
+            p {
+                margin: auto;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(56, 135, 255);
+                    font-weight: bold;
+                }
+            }
+        }
+        #downloads {
+            ion-img {
+                max-width: 150px;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 5rem;
+    #links {
+        width: 75%;
+
+        a {
+            text-decoration: none;
+            margin-left: 1.5rem;
+            color: gray;
+        }
+    }
+}
+
+#bottom {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 912px){
+    #register-content {
+        #register-form {
+            #container {
+                border: none;
+            }
+            
+            #login {
+                border: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    #register-content {
+        margin-top: 1rem;
+    }
+
+    footer {
+        font-size: .75rem;
+        margin: 0;
+
+        #links {
+            text-align: start !important;
+        }
+
+        * {
+            margin: 0;
+        }
+    }
+    #bottom {
+        font-size: .75rem;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #downloads {
+        ion-img {
+            width: 100px;
+        }
+    }
+
+    input {
+        max-width: 290px;
+    }
+
+    button {
+        max-width: 290px;
+    }
+}
+
