@@ -77,7 +77,7 @@
                 button {
                     width: 350px;
                     border-radius: 10px;
-                    background-color: #3880ff;
+                    background-color: #2767d6;
                 }
 
                 button:disabled {
@@ -107,6 +107,12 @@
 
             p {
                 margin: auto;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(56, 135, 255);
+                    font-weight: bold;
+                }
             }
         }
         #downloads {
