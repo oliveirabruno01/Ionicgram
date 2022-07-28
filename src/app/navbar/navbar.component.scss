@@ -1,0 +1,27 @@
+ion-footer {
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+
+    border-top: .2px solid lightgray;
+
+    ion-row {
+        justify-content: center;
+
+        #links {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+
+            ion-icon {
+                font-size: 1.7rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 916px){
+    .hidden-desktop {
+        display: none !important;
+    }   
+}

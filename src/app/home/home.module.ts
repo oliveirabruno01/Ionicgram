@@ -7,7 +7,10 @@ import { HomePage } from './home.page';
 import { PostComponent } from '../post/post.component';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { SuggestionCardComponent } from '../suggestion-card/suggestion-card.component';
+import { HeaderModule } from '../header/header.module';
+import { NavbarModule } from '../navbar/navbar.module';
+import { PostModule } from '../post/post.module';
+import { SuggestionCardModule } from '../suggestion-card/suggestion-card.module';
 
 @NgModule({
   imports: [
@@ -16,7 +19,11 @@ import { SuggestionCardComponent } from '../suggestion-card/suggestion-card.comp
     FormsModule,
     HomePageRoutingModule,
     SwiperModule,
+    HeaderModule,
+    NavbarModule,
+    PostModule,
+    SuggestionCardModule
   ],
-  declarations: [HomePage, PostComponent, SuggestionCardComponent]
+  declarations: [HomePage]
 })
 export class HomePageModule {}

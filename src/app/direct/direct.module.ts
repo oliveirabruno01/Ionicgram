@@ -6,13 +6,17 @@ import { FormsModule } from '@angular/forms';
 import { DirectPage } from './direct.page';
 
 import { DirectPageRoutingModule } from './direct-routing.module';
+import { HeaderModule } from '../header/header.module';
+import { NavbarModule } from '../navbar/navbar.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    DirectPageRoutingModule
+    DirectPageRoutingModule,
+    HeaderModule,
+    NavbarModule
   ],
   declarations: [DirectPage]
 })

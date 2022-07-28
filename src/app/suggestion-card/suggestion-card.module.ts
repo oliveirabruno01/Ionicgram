@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header.component';
+import { SuggestionCardComponent } from './suggestion-card.component';
 import { IonicModule } from '@ionic/angular';
-import { RouterModule } from '@angular/router';
+
+
 
 @NgModule({
   declarations: [
-    HeaderComponent,
+    SuggestionCardComponent
   ],
   imports: [
     CommonModule,
-    IonicModule,
-    RouterModule
+    IonicModule
   ],
   exports: [
-    HeaderComponent
+    SuggestionCardComponent
   ]
 })
-export class HeaderModule { }
+export class SuggestionCardModule { }

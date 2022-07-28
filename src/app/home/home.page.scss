@@ -1,6 +1,6 @@
 #stories {
     width: 600px;
-    margin-top: 2rem;
+    margin-top: 5rem;
     padding: 1.3rem .2rem;
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 512px){
     #stories {
-        margin: .5rem 0rem 0;
+        margin: 4rem 0rem 0;
         padding: 0;
         padding-bottom: 1rem;
         border: none;
@@ -74,10 +74,6 @@
 @media screen and (max-width: 1200px){
     #home-content {
         padding: 0;
-
-        #stories {
-            margin-top: 0;
-        }
     }
 
     #lateral {
@@ -110,7 +106,7 @@
     }
 
     #lateral {
-        margin-top: 2.4rem;
+        margin-top: 5rem;
         margin-left: 2.8rem;
         position: absolute;
         height: 50%;

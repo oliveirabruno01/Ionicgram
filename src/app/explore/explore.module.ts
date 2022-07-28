@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { ExplorePage } from './explore.page';
 
 import { ExplorePageRoutingModule } from './explore-routing.module';
+import { HeaderModule } from '../header/header.module';
+import { NavbarModule } from '../navbar/navbar.module';
 
 @NgModule({
   imports: [
@@ -14,6 +16,8 @@ import { ExplorePageRoutingModule } from './explore-routing.module';
     FormsModule,
     RouterModule.forChild([{ path: '', component: ExplorePage }]),
     ExplorePageRoutingModule,
+    HeaderModule,
+    NavbarModule
   ],
   declarations: [ExplorePage]
 })

@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header.component';
 import { IonicModule } from '@ionic/angular';
+import { NavbarComponent } from './navbar.component';
 import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
-    HeaderComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
@@ -14,7 +15,7 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   exports: [
-    HeaderComponent
+    NavbarComponent
   ]
 })
-export class HeaderModule { }
+export class NavbarModule { }

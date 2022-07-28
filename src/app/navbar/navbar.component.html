@@ -1,0 +1,16 @@
+<ion-footer class="hidden-desktop">
+  <ion-row class="ion-padding">
+    <div id="links">
+      <ion-icon 
+        name="{{ this.getPath() == 'home' ? 'home' : 'home-outline' }}"
+        routerLink="/home"
+        routerDirection="root"></ion-icon>
+      <ion-icon 
+        name="{{ this.getPath() == 'explore' ? 'compass' : 'compass-outline' }}"
+        routerLink="/explore"
+        routerDirection="root">
+      </ion-icon>
+      <ion-icon name="person-outline"></ion-icon>
+    </div>
+  </ion-row>
+</ion-footer>
