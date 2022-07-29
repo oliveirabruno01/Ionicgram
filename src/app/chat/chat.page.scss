@@ -1,0 +1,198 @@
+.contact {
+    img {
+        width: 56px;
+        border-radius: 50%;
+    }
+    h6 {
+        margin: 0;
+        font-size: .76rem;
+    }
+}
+
+
+#content {
+    #chats {
+        .contact {
+            display: flex;
+            align-items: center;
+            
+            .camera_action {
+                position: absolute;
+                left: 85%;
+
+                ion-icon {
+                    font-size: 1.5rem;
+                    color: gray;
+                }
+            }
+
+            .labels {
+                * {
+                    margin: 0;
+                }
+
+                p {
+                    color: gray;
+                }
+            }
+        }
+        #profile_inbox {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            border-bottom: 1px solid lightgray;
+            height: 3.5rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 916px){
+    .hidden-mobile {
+        display: none !important;
+    }
+
+    #mobile-header {
+        * {
+            color: black;
+        }
+    
+        h3 {
+            margin: 0;
+        }
+    
+        padding: 1rem;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        display: flex;
+        align-items: center;
+    
+        #return-arrow {
+            font-size: 1.6rem;
+            margin-right: 1rem;
+        }
+        ion-icon, h2 {
+            color: black;
+        }
+    
+        #actions {
+            display: flex;
+            justify-content: end;
+            ion-icon {
+                font-size: 1.9rem;
+                margin-left: 1.4rem;
+            }
+        }
+    }
+
+    #search-container {
+
+        ion-searchbar {
+            width: 90%;
+            --border-radius: 10px !important;
+            --box-shadow: none !important;
+            --color: #000 !important;
+            --background: #EFEFEF;
+        }    
+    }
+
+    #contacts-online {
+        display: flex;
+        overflow: hidden;
+    }
+
+    #messages-divisory {
+        a {
+            font-weight: 600;
+            text-decoration: none;
+            color: rgb(72, 173, 255);
+        }
+    }
+
+    #chats {
+        margin-top: 1.5rem;
+        .contact {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 916px){
+    .hidden-desktop {
+        display: none !important;
+    }
+
+    #content {
+        display: flex;
+        justify-content: center;
+        margin-top: 6rem;
+
+        ion-row {
+            width: 80%;
+
+            #chats {
+                border: 1px solid lightgray;
+                border-radius: 5px 0 0 5px;
+                border-right: none;
+                max-height: 80vh;
+                overflow: hidden;
+                overflow-y: scroll;
+                padding-top: 0;
+
+                .contact {
+                    margin: 0.5rem 0;
+                }
+            }
+
+            #chat {
+                border: 1px solid lightgray;
+                border-radius: 0 5px 5px 0;
+                
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+
+                justify-content: space-between;
+
+                #chat-props {
+                    width: 100%;
+                    height: 3.5rem;
+                    border-bottom: 1px solid lightgray;
+
+                    * {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    #chat-actions {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                        justify-content: end;
+
+                        ion-icon {
+                            margin-left: .5rem;
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+                #chat-container {
+                    width: 100%;
+
+                    ion-item {
+                        width: 100%;
+                        border-top: 1px solid lightgray;
+
+
+                        p {
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
