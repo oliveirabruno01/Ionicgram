@@ -1,21 +1,24 @@
 <app-header class="hidden-mobile"></app-header>
 <ion-header class="hidden-desktop ion-no-border" id="mobile-header">
-    <ion-col size="2">
+    <ion-col size="1">
         <ion-icon id="return-arrow" 
         name="arrow-back" 
         ios="ios-arrow-back"
         routerLink="/direct"
         routerDirection="root"></ion-icon>
     </ion-col>
-    <ion-col size="6">
-        <ion-row class="ion-align-items-center">
-            <h3>seu_nome</h3>
-            <ion-icon name="arrow-down"></ion-icon>
-        </ion-row>    
+    <ion-col size="6" id="chat-name">
+        <ion-row>
+            <img src="../../assets/image.jpg" alt=""/>
+            <ion-col>
+                <h3>{{getPath()}}</h3>
+                <h6>Online agora</h6>
+            </ion-col>
+        </ion-row>
     </ion-col>
     <ion-col id="actions">
+        <ion-icon name="call-outline"></ion-icon>
         <ion-icon name="videocam-outline"></ion-icon>
-        <ion-icon name="add-outline"></ion-icon>
     </ion-col>
 </ion-header>
 
@@ -46,7 +49,7 @@
             sizeLg="6"
             sizeMd="12" 
             id="chat">
-                <ion-row id="chat-props" class="ion-padding">
+                <ion-row id="chat-props" class="ion-padding hidden-mobile">
                   <ion-col>
                     <b>{{getPath()}}</b>
                   </ion-col>

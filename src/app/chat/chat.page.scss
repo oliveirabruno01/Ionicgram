@@ -110,10 +110,26 @@
     
         #return-arrow {
             font-size: 1.6rem;
-            margin-right: 1rem;
+            margin-right: .1rem;
         }
         ion-icon, h2 {
             color: black;
+        }
+
+        #chat-name {
+            * {
+                margin: 0;
+            }
+
+            ion-row {
+                img {
+                    width: 54px;
+                    border-radius: 50%;
+                }
+            }
+            h6 {
+                color: gray;
+            }
         }
     
         #actions {
@@ -124,6 +140,7 @@
                 margin-left: 1.4rem;
             }
         }
+
     }
 
     #content {
