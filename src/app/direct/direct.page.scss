@@ -36,18 +36,11 @@
                 }
             }
         }
-        #profile_inbox {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-
-            border-bottom: 1px solid lightgray;
-        }
     }
 }
 
 
-@media screen and (max-width: 916px){
+@media screen and (max-width: 990px){
     .hidden-mobile {
         display: none !important;
     }
@@ -118,7 +111,7 @@
     }
 }
 
-@media screen and (min-width: 916px){
+@media screen and (min-width: 991px){
     .hidden-desktop {
         display: none !important;
     }
@@ -126,21 +119,34 @@
     #content {
         display: flex;
         justify-content: center;
-        margin-top: 3rem;
+        margin-top: 4.5rem;
 
         ion-row {
             width: 80%;
 
-            #chats {
+            #chats-container {
                 border: 1px solid lightgray;
                 border-radius: 5px 0 0 5px;
-                border-right: none;
-                max-height: 80vh;
-                overflow: hidden;
-                overflow-y: scroll;
+                padding: 0;
+                margin: 0;
+                
+                #profile-inbox {
+                    width: 100%;
+                    border-bottom: 1px solid lightgray;
+                    display: flex;
+                    justify-content: center;
+                    height: 3.5rem;
+                }
+                #chats {
+                    border-right: none;
+                    height: 85vh;
+                    overflow: hidden;
+                    overflow-y: scroll;
 
-                .contact {
-                    margin: 0.5rem 0;
+                    .contact {
+                        margin: 0.5rem 0;
+                        padding-left: .6rem;
+                    }
                 }
             }
 

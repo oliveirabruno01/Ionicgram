@@ -20,28 +20,28 @@
 
 <ion-content [fullscreen]="true">
     <div id="content">
-        <ion-row>
-            <ion-col id="chats">
-                <ion-row class="hidden-mobile ion-padding-vertical" id="profile_inbox">
+        <ion-row class="ion-justify-content-center">
+            <ion-col id="chats-container" sizeSm="12" sizeLg="3" class="hidden-mobile">
+                <ion-row class="hidden-mobile ion-padding-vertical" id="profile-inbox">
                     <b>seu_nome ></b>
                 </ion-row>
 
-                <ion-row class="hidden-mobile" *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 1, 1, 1, 1, 1, 1]">
-                    <div class="contact" routerLink="/direct/t/{{x}}" routerDirection="root">
-                        <img src="../../assets/image.jpg" alt=""/>
-                        <ion-col class="labels">
-                            <b>fulano</b>
-                            <p>Online há n h</p>
-                        </ion-col>
-                        <ion-col class="camera_action hidden-desktop">
-                            <ion-icon name="camera-outline"></ion-icon>
-                        </ion-col>
-                    </div>
-                </ion-row>
+                <div id="chats" >
+                    <ion-row *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 1, 1, 1, 1, 1, 1]">
+                        <div class="contact" routerLink="/direct/t/{{x}}" routerDirection="root">
+                            <img src="../../assets/image.jpg" alt=""/>
+                            <ion-col class="labels">
+                                <b>fulano</b>
+                                <p>Online há n h</p>
+                            </ion-col>
+                            <ion-col class="camera_action hidden-desktop">
+                                <ion-icon name="camera-outline"></ion-icon>
+                            </ion-col>
+                        </div>
+                    </ion-row>
+                </div>
             </ion-col>
-
-            <ion-col 
-            class="hidden-mobile" 
+            <ion-col  
             size="6" 
             id="chat">
                 <ion-row id="chat-props" class="ion-padding">
