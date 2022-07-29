@@ -94,8 +94,8 @@
             }
 
             span {
-                background-color: #3880ff;
-                padding: .2rem .4rem;
+                background-color: rgba(212, 204, 204, 0.534);
+                padding: .4rem;
                 border-radius: 5px;
                 margin-top: 1rem;
                 
@@ -110,7 +110,7 @@
                 width: 100%;
                 border-top: 1px solid lightgray;
 
-
+                
                 p {
                     margin-right: 1rem;
                 }
@@ -191,6 +191,34 @@
     
             #chat {
                 height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                #chat-container {
+                    width: 80%;
+                    margin-bottom: 1rem;
+
+                    ion-item {
+                        border: 2px solid lightgray;
+                        border-radius: 50px;
+                        text-align: center;
+
+                        --padding-start: 0px;
+                        --inner-padding-start: .2rem;
+
+                        #camera-mobile {
+                            color: white;
+                            background-color: hsla(180, 100%, 50%, 1);
+                            background: linear-gradient(360deg, hsla(180, 100%, 50%, 1) 0%, hsla(180, 96%, 38%, 1) 100%);
+
+                            padding: .5rem;
+                            border-radius: 50%;
+
+                            margin: 0;
+                        }
+                    }
+                }
             }
         }
     }

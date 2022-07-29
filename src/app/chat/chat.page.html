@@ -70,11 +70,13 @@
                     <span>Ver perfil</span>
                 </div>
                 <ion-row id="chat-container">
-                  <ion-item>
-                    <p>🙂</p>
+                  <ion-item lines="none">
+                    <ion-icon name="camera" class="hidden-desktop" id="camera-mobile"></ion-icon>
+                    <p class="hidden-mobile">🙂</p>
                     <ion-input type="text" placeholder="Mensagem..."></ion-input>
+                    <ion-icon name="mic-outline" class="hidden-desktop" ></ion-icon>
                     <ion-icon name="image-outline"></ion-icon>
-                    <ion-icon name="heart-outline"></ion-icon>
+                    <ion-icon name="heart-outline" class="hidden-mobile"></ion-icon>
                   </ion-item>
                 </ion-row>
             </ion-col>
