@@ -4,7 +4,8 @@
         <ion-icon id="return-arrow" 
         name="arrow-back" 
         ios="ios-arrow-back"
-        routerLink="/home"></ion-icon>
+        routerLink="/direct"
+        routerDirection="root"></ion-icon>
     </ion-col>
     <ion-col size="6">
         <ion-row class="ion-align-items-center">
@@ -20,7 +21,7 @@
 
 <ion-content [fullscreen]="true">
     <div id="content">
-        <ion-row class="ion-justify-content-center">
+        <ion-row class="ion-justify-content-center" id="main">
             <ion-col id="chats-container" sizeSm="12" sizeLg="3" class="hidden-mobile">
                 <ion-row class="hidden-mobile ion-padding-vertical" id="profile-inbox">
                     <b>seu_nome ></b>
@@ -41,8 +42,9 @@
                     </ion-row>
                 </div>
             </ion-col>
-            <ion-col  
-            size="6" 
+            <ion-col
+            sizeLg="6"
+            sizeMd="12" 
             id="chat">
                 <ion-row id="chat-props" class="ion-padding">
                   <ion-col>
@@ -54,6 +56,8 @@
                     <ion-icon name="information-circle-outline"></ion-icon>
                   </ion-col>
                 </ion-row>
+                
+                <div id="messages"></div>
 
                 <ion-row id="chat-container">
                   <ion-item>

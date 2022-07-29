@@ -126,10 +126,22 @@
         }
     }
 
-    #chats {
-        margin-top: 1.5rem;
-        .contact {
-            margin-bottom: 1rem;
+    #content {
+        height: 100%;
+
+        #main {
+            height: 100%;
+
+            #chats {
+                margin-top: 1.5rem;
+                .contact {
+                    margin-bottom: 1rem;
+                }
+            }
+    
+            #chat {
+                height: 100%;
+            }
         }
     }
 }
