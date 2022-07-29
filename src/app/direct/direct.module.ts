@@ -8,6 +8,7 @@ import { DirectPage } from './direct.page';
 import { DirectPageRoutingModule } from './direct-routing.module';
 import { HeaderModule } from '../header/header.module';
 import { NavbarModule } from '../navbar/navbar.module';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   imports: [
@@ -16,7 +17,8 @@ import { NavbarModule } from '../navbar/navbar.module';
     FormsModule,
     DirectPageRoutingModule,
     HeaderModule,
-    NavbarModule
+    NavbarModule,
+    SwiperModule
   ],
   declarations: [DirectPage]
 })

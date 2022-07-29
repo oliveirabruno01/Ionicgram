@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: DirectPage,
+  },
+  {
+    path: 't/:id',
+    loadChildren: () => import('../chat/chat.module').then(m => m.ChatPageModule) 
   }
 ];
 
