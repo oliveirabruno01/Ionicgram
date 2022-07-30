@@ -1,13 +1,35 @@
+<app-header class="hidden-mobile"></app-header>
 <ion-content [fullscreen]="true">
-  <ion-searchbar placeholder="Pesquisar"></ion-searchbar>
+  <ion-searchbar placeholder="Pesquisar" class="hidden-desktop"></ion-searchbar>
   <ion-grid>
-    <ion-row>
-      <ion-col 
-        sizeXs="12" sizeSm="6" size="4" sizeMd="4" sizeLg="3" sizeXl="2" 
+    <ion-row class="ion-padding-horizontal">
+      <ion-col size="4" 
         *ngFor="let image of images">
         <img src="{{image}}" alt="">
       </ion-col>
     </ion-row>
   </ion-grid>
+  <footer>
+    <div id="links" class="ion-text-center">
+      <a href="">Meta </a>
+      <a href="">Sobre </a>
+      <a href="">Blog </a>
+      <a href="">Carreiras </a>
+      <a href="">Ajuda </a>
+      <a href="">API </a>
+      <a href="">Privacidade </a>
+      <a href="">Termos </a>
+      <a href="">Principais contas </a>
+      <a href="">Hashtags </a>
+      <a href="">Localizações </a>
+      <a href="">Instagram Lite </a>
+      <a href="">Carregamento de contatos e  não usuários </a>
+      <a href="">Dança </a>
+      <a href="">Comida e bebida </a>
+      <a href="">Casa e jardim </a>
+      <a href="">Música </a>
+      <a href="">Artes visuais </a>
+    </div>
+  </footer>
   <app-navbar></app-navbar>
 </ion-content>

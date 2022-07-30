@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['explore.page.scss']
 })
 export class ExplorePage {
-  images: String[] = ['../../assets/image.jpg'];
+  images: String[] = ['../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg'];
 
   constructor() {}
 }
