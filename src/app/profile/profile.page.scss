@@ -1,11 +1,78 @@
-@media screen and (max-width: 512px){
-    .hidden-mobile {
-        display: none;
+#profile-info {
+    margin-top: 4rem;
+
+    img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    #name-options {
+        align-items: center;
+
+        h3 {
+            margin-right: 2rem;
+        }
+
+        ion-button {
+            --background: white;
+            --box-shadow: none;
+            --border-width: 1px;
+            --border-style: solid;
+            --border-color: lightgray;
+            color: black;
+
+            h6 {
+                font-size: .7rem;
+            }
+    
+            ion-icon {
+                color: black;
+                font-size: 20px;
+            }
+        }
+    }
+
+    #page-status {
+        p {
+            margin-right: 2rem;
+        }
+    }
+
+    #bio {
+        width: 75%;
     }
 }
 
-@media screen and (min-width: 513px){
+#tab-content {
+    #tab-selector {
+        width: 100%;
+        border-top: 1px solid lightgray;
+        
+        p {
+            font-size: .8rem;
+            color: gray;
+            margin-right: 2rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .hidden-mobile {
+        display: none;
+    }
+
+    #profile-info {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 769px){
     .hidden-desktop {
         display: none;
+    }
+
+    ion-grid {
+        width: 816px;
     }
 }

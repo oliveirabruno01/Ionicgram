@@ -1,4 +1,48 @@
 <app-header class="hidden-mobile"></app-header>
 <ion-content>
+  <ion-grid>
+    <ion-row class="ion-padding" id="profile-info">
+      <ion-col size="4">
+        <img src="../../assets/image.jpg" alt="">
+      </ion-col>
+      <ion-col>
+        <ion-row id="name-options">
+          <h3>profile_name</h3>
+          <ion-button><h6>Enviar mensagem</h6></ion-button>
+          <ion-button><ion-icon name="person"></ion-icon></ion-button>
+          <ion-button><ion-icon name="arrow-down"></ion-icon></ion-button>
+          <ion-button><ion-icon name="ellipsis-horizontal-outline"></ion-icon></ion-button>
+        </ion-row>
+
+        <ion-row id="page-status">
+          <p><b>000</b> publicações</p>
+          <p><b>000</b> seguidores</p>
+          <p><b>000</b> seguindo</p>
+        </ion-row>
+
+        <b>profile_name</b>
+        <div id="bio">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, excepturi!</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row id="fixed-stories"></ion-row>
+    <ion-row id="tab-content">
+      <ion-row id="tab-selector" class="ion-justify-content-center">
+        <p>PUBLICAÇÕES</p>
+        <p>FEED</p>
+        <p>REELS</p>
+        <p>VÍDEOS</p>
+        <p>MARCADOS</p>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4" 
+          *ngFor="let image of images">
+          <img src="{{image}}" alt="">
+      </ion-col>
+      </ion-row>
+    </ion-row>
+  </ion-grid>
+
   <app-navbar class="hidden-desktop"></app-navbar>
 </ion-content>
