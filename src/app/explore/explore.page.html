@@ -1,5 +1,13 @@
-<app-header></app-header>
-
 <ion-content [fullscreen]="true">
+  <ion-searchbar placeholder="Pesquisar"></ion-searchbar>
+  <ion-grid>
+    <ion-row>
+      <ion-col 
+        sizeXs="12" sizeSm="6" size="4" sizeMd="4" sizeLg="3" sizeXl="2" 
+        *ngFor="let image of images">
+        <img src="{{image}}" alt="">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <app-navbar></app-navbar>
 </ion-content>
