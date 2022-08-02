@@ -1,0 +1,19 @@
+ion-row {
+    font-size: .8rem;
+
+    img {
+        width: 64px;
+        border-radius: 50%;
+    }
+
+    p {
+        margin-left: 1rem;
+    }
+
+    ion-button {
+        --background: #3c89fb;
+        --border-radius: 25px;
+        font-size: .7rem;
+        font-weight: bold;
+    }
+}

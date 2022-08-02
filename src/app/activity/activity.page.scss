@@ -1,0 +1,17 @@
+ion-header {
+    background-color: white;
+    color: black;
+}
+
+ion-content {
+
+    .activity-group {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    span {
+        font-weight: bold;
+        padding: 1rem;
+        color: gray;
+    }
+}
