@@ -3,6 +3,19 @@
     margin: 0;
 }
 
+
+ion-popover#profile-popover {
+    .prof-popover-link {
+        margin: 0;
+        padding: .7rem;
+        font-size: 12px;
+    }
+
+    :last-child {
+        border-top: 1px solid lightgray;
+    }
+}
+
 ion-header {
     padding: .5rem .4rem 0;
     position: fixed;

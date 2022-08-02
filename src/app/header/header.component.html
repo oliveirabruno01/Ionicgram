@@ -37,9 +37,37 @@
         name="{{ this.getPath() == 'explore' ? 'compass' : 'compass-outline' }}">
       </ion-icon>
 
-      <ion-icon class="hidden-mobile" 
-        name="person-outline">
+      <ion-icon class="hidden-mobile" name="person-outline" id="click-trigger">
       </ion-icon>
+
+      <ion-popover 
+      trigger="click-trigger" 
+      triggerAction="click"
+      id="profile-popover">
+        <ng-template>
+          <ion-content>
+            <ion-row class="prof-popover-link" routerLink="/profile" onclick="{dismissModal()}">
+              <ion-icon name="person-outline" ></ion-icon>
+              Perfil
+            </ion-row>
+            <ion-row class="prof-popover-link">
+              <ion-icon name="bookmark-outline"></ion-icon>
+              Salvos
+            </ion-row>
+            <ion-row class="prof-popover-link">
+              <ion-icon name="cog-outline"></ion-icon>
+              Configurações
+            </ion-row>
+            <ion-row class="prof-popover-link" routerLink="/login">
+              <ion-icon name="repeat-outline"></ion-icon>
+              Trocar de conta
+            </ion-row>
+            <ion-row class="prof-popover-link" routerLink="/login">Sair
+            </ion-row>
+          </ion-content>
+        </ng-template>
+      </ion-popover>
+      
     </ion-col>
   </ion-row>
 </ion-header>
