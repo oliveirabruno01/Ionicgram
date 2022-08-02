@@ -3,6 +3,30 @@
     margin: 0;
 }
 
+#file-input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+}
+
+ion-modal {
+    ion-button {
+        --background: rgb(56, 135, 255);
+    }
+}
+ion-popover#heart-popover {
+    --width: 500px;
+    .activity-group {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    span {
+        font-weight: bold;
+        padding: 1rem;
+        color: gray;
+    }
+}
 
 ion-popover#profile-popover {
     .prof-popover-link {
