@@ -23,7 +23,6 @@ export class PostComponent implements OnInit {
   }
 
   getUserProfileImage(): string {
-    let name = this.users[this.post.author_id-1]?.profile_image
     return this.users[this.post.author_id-1]?.profile_image;
   }
 }

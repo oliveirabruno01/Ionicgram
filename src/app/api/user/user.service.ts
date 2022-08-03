@@ -16,13 +16,19 @@ export class UserService {
 
     res.subscribe(response => {
       response.map(user => {
-        let u: User = {} as User;
-        u.id = user.id;
-        u.name = user.name;
-        u.profile_image = user.profile_image;
-        users.push(u);
+        setTimeout(() => {
+          let u: User = {} as User;
+          u.id = user.id;
+          u.name = user.name;
+          u.profile_image = user.profile_image;
+          users.push(u);
+        } , 2000);
       })
     })
     return users;
+  }
+
+  getUser(id: number): User {
+    return this.getUsers().find(user => user.id == id);
   }
 }

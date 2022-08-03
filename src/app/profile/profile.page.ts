@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { UserService } from '../api/user/user.service';
+import { User } from '../types/User';
 
 @Component({
   selector: 'app-profile',
@@ -7,10 +10,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilePage implements OnInit {
   images: String[] = ['../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg'];
-
-  constructor() { }
+  users: User[];
+  constructor(private router: Router, private user_service: UserService) { }
 
   ngOnInit() {
+    this.users = this.user_service.getUsers();
   }
 
+  ionViewDidEnter() {
+  }
+
+  getUserName(): string {
+    return this.users.find(user => user.name === this.getPath())?.name
+  }
+
+  getUserProfileImage(): string {
+    return this.users.find(user => user.name === this.getPath())?.profile_image;
+  }
+
+  getPath() {
+    return this.router.url.split('/')[1];
+  }
 }

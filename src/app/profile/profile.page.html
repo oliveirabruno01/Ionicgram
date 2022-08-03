@@ -3,11 +3,11 @@
   <ion-grid>
     <ion-row class="ion-padding" id="profile-info">
       <ion-col size="4">
-        <img src="../../assets/image.jpg" alt="">
+        <img src="{{'../../assets/' + getUserProfileImage()}}" alt="">
       </ion-col>
       <ion-col>
         <ion-row id="name-options">
-          <h3>profile_name</h3>
+          <h3>{{getUserName()}}</h3>
           <ion-button><h6>Enviar mensagem</h6></ion-button>
           <ion-button><ion-icon name="person"></ion-icon></ion-button>
           <ion-button><ion-icon name="arrow-down"></ion-icon></ion-button>
