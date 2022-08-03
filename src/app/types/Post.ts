@@ -1,6 +1,5 @@
-export class Post {
+export interface Post {
     id: number;
-    text: string;
     author_id: number;
     created_at: string;
     updated_at: string;
