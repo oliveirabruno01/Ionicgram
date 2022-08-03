@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { UserService } from '../api/user/user.service';
+import { Post } from '../types/Post';
+import { User } from '../types/User';
 
 @Component({
   selector: 'app-post',
@@ -6,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post.component.scss'],
 })
 export class PostComponent implements OnInit {
+  users: User[];
+  @Input() post: Post;
+  constructor(private user_service: UserService) { }
 
-  constructor() { }
-
-  ngOnInit() {}
-
+  ngOnInit() {
+    this.users = this.user_service.getUsers();
+  }
 }

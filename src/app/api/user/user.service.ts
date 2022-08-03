@@ -1,0 +1,28 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { User } from 'src/app/types/User';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class UserService {
+  private API_URL = 'https://raw.githubusercontent.com/oliveirabruno01/Ionicgram/master/fake-server/user/users.json';
+  constructor(private http: HttpClient) { }
+
+  getUsers(): Array<User> {
+    let res = this.http.get<Array<User>>(this.API_URL);
+    let users: Array<User> = Array<User>();
+
+    res.subscribe(response => {
+      response.map(user => {
+        let u: User = {} as User;
+        u.id = user.id;
+        u.name = user.name;
+        u.profile_image = user.profile_image;
+        users.push(u);
+      })
+    })
+    
+    return users;
+  }
+}

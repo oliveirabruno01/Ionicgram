@@ -18,9 +18,7 @@
           </swiper>
         </ion-row>
         <ion-col class="content">
-          <app-post></app-post>
-          <app-post></app-post>
-          <app-post></app-post>
+          <app-post *ngFor="let post of posts" [post]="post"></app-post>
           <ion-modal #modal trigger="open">
             <ng-template>
               <ion-content>

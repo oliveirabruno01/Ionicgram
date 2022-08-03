@@ -9,14 +9,14 @@
               <ion-label></ion-label>
             </div>
           </div>
-          <h6><b>nome_da_pessoa</b></h6>
+          <h6><b>{{this.post.author_id}}</b></h6>
         </div>
 
         <ion-icon id="open" size="small" name="ellipsis-vertical-outline"></ion-icon>
 
       </ion-row>
     </div>
-    <img src="../../assets/posts_imgs/gato_000001.jpg" alt="">
+    <img src="{{this.post.image}}" alt="" style="width: 512px">
   
     <div class="post-info">
       <ion-row class="post-actions">
