@@ -8,7 +8,7 @@ import { Post } from '../types/Post';
   styleUrls: ['home.page.scss']
 })
 export class HomePage {
-  private API_URL = 'https://raw.githubusercontent.com/oliveirabruno01/Ionicgram/master/fake-server/db.json';
+  private API_URL = 'https://raw.githubusercontent.com/oliveirabruno01/Ionicgram/master/fake-server/';
 
   constructor(public http: HttpClient) {}
 
@@ -17,27 +17,15 @@ export class HomePage {
 
   ionViewDidEnter() {
     console.log('HomePage onInit');
-    console.log(this.loadPostsFromServer());
+    this.loadPostsFromServer();
   }
 
   loadPostsFromServer() {
-    const res = this.http.get<Post[]>(this.API_URL);
+    let res = this.http.get<Post[]>(this.API_URL + 'posts.json');
+    let posts: Post[] = [];
 
-    let posts = new Array<Post>();
-    res.subscribe(response => 
-      {
-        response.map(item => {
-          let p = new Post();
-          p.id = item.id;
-          p.text = item.text;
-          p.author_id = item.author_id;
-          p.created_at = item.created_at;
-          p.updated_at = item.updated_at;
-          p.image = item.image;
-          posts.push(p);
-        })
-      })
-    
+    res.subscribe(_posts => posts = _posts); 
+    console.log(posts);
     return posts;
   }
 }

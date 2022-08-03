@@ -1,4 +1,4 @@
-export class Storie {
+export interface Storie {
     "id": number;
     "text": string;
     "author_id": number;
