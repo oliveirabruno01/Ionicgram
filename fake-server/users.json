@@ -2,21 +2,33 @@
     {
         "id": 1,
         "name": "fulano",
-        "profile_image": "images/users/user1.jpg"
+        "profile_image": "images/users/user1.jpg",
+        "followers": 12,
+        "following": 12,
+        "bio": "Vulputate odio ut enim blandit volutpat maecenas volutpat. Sit amet venenatis urna cursus eget."
     },
     {
         "id": 2,
         "name": "ciclano",
-        "profile_image": "images/users/user2.jpg"
+        "profile_image": "images/users/user2.jpg",
+        "followers": 240,
+        "following": 12,
+        "bio": "Nunc sed velit dignissim sodales ut. Tellus at urna condimentum mattis pellentesque. Vitae proin"
     },
     {
         "id": 3,
         "name": "bel.trano",
-        "profile_image": "images/users/user3.jpg"
+        "profile_image": "images/users/user3.jpg",
+        "followers": 4,
+        "following": 2,
+        "bio": "Morbi non arcu risus quis. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa."
     },
     {
         "id": 4,
         "name": "traj-ano",
-        "profile_image": "images/users/user4.jpg"
+        "profile_image": "images/users/user4.jpg",
+        "followers": 32,
+        "following": 21,
+        "bio": "Nunc sed velit dignissim sodales ut. Tellus at urna condimentum mattis pellentesque."
     }
 ]
