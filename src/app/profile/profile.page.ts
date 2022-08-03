@@ -28,6 +28,18 @@ export class ProfilePage implements OnInit {
     return this.users.find(user => user.name === this.getPath())?.profile_image;
   }
 
+  getUserFollowers(): number {
+    return this.users.find(user => user.name === this.getPath())?.followers;
+  }	
+
+  getUserFollowing(): number {
+    return this.users.find(user => user.name === this.getPath())?.following;
+  }
+
+  getUserBio(): string {
+    return this.users.find(user => user.name === this.getPath())?.bio;
+  }
+
   getPath() {
     return this.router.url.split('/')[1];
   }

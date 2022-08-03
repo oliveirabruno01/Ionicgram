@@ -21,6 +21,9 @@ export class UserService {
           u.id = user.id;
           u.name = user.name;
           u.profile_image = user.profile_image;
+          u.followers = user.followers;
+          u.following = user.following;
+          u.bio = user.bio;
           users.push(u);
         } , 2000);
       })

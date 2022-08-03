@@ -16,13 +16,13 @@
 
         <ion-row id="page-status">
           <p><b>000</b> publicações</p>
-          <p><b>000</b> seguidores</p>
-          <p><b>000</b> seguindo</p>
+          <p><b>{{getUserFollowers()}}</b> seguidores</p>
+          <p><b>{{getUserFollowing()}}</b> seguindo</p>
         </ion-row>
 
         <b>{{getUserName()}}</b>
         <div id="bio">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, excepturi!</p>
+          <p>{{getUserBio()}}</p>
         </div>
       </ion-col>
     </ion-row>
