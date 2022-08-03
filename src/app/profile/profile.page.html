@@ -15,7 +15,7 @@
         </ion-row>
 
         <ion-row id="page-status">
-          <p><b>000</b> publicações</p>
+          <p><b>{{getPostsByUserId(getUserId()).length }}</b> publicações</p>
           <p><b>{{getUserFollowers()}}</b> seguidores</p>
           <p><b>{{getUserFollowing()}}</b> seguindo</p>
         </ion-row>
