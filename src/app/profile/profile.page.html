@@ -37,8 +37,8 @@
       </ion-row>
       <ion-row>
         <ion-col size="4" 
-          *ngFor="let image of images">
-          <img src="{{image}}" alt="">
+          *ngFor="let post of getPostsByUserId(getUserId())">
+          <img src="{{'../../assets/' + post.image}}" alt="">
       </ion-col>
       </ion-row>
     </ion-row>

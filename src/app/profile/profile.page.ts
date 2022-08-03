@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../api/user/user.service';
 import { User } from '../types/User';
+import { Post } from '../types/Post';
+import { PostService } from '../api/post/post.service';
 
 @Component({
   selector: 'app-profile',
@@ -11,10 +13,16 @@ import { User } from '../types/User';
 export class ProfilePage implements OnInit {
   images: String[] = ['../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg'];
   users: User[];
-  constructor(private router: Router, private user_service: UserService) { }
+  posts: Post[];
+  constructor(
+    private router: Router, 
+    private user_service: UserService,
+    private post_service: PostService
+    ) { }
 
   ngOnInit() {
     this.users = this.user_service.getUsers();
+    this.posts = this.post_service.getPosts();
   }
 
   ionViewDidEnter() {
@@ -38,6 +46,14 @@ export class ProfilePage implements OnInit {
 
   getUserBio(): string {
     return this.users.find(user => user.name === this.getPath())?.bio;
+  }
+  
+  getUserId(): number {
+    return this.users.find(user => user.name === this.getPath())?.id;
+  }
+
+  getPostsByUserId(id: number) {
+    return this.posts.filter(post => post.author_id === id);
   }
 
   getPath() {
