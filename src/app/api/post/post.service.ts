@@ -6,7 +6,7 @@ import { Post } from 'src/app/types/Post';
   providedIn: 'root'
 })
 export class PostService {
-  private API_URL = 'https://raw.githubusercontent.com/oliveirabruno01/Ionicgram/master/fake-server/post/posts.json';
+  private API_URL = 'https://raw.githubusercontent.com/oliveirabruno01/Ionicgram/master/fake-server/posts.json';
   
   constructor(private http: HttpClient) { }
 

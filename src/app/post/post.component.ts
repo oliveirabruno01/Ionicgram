@@ -16,4 +16,15 @@ export class PostComponent implements OnInit {
   ngOnInit() {
     this.users = this.user_service.getUsers();
   }
+
+  getUserName(): string {
+    return this.users[this.post.author_id-1]?.name
+  }
+
+  getUserProfileImage(): string {
+    let name = this.users[this.post.author_id-1]?.profile_image
+    console.log("name")
+    console.log(name);
+    return this.users[this.post.author_id-1]?.profile_image;
+  }
 }

@@ -1,17 +1,18 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { User } from 'src/app/types/User';
+import { HttpClient } from '@angular/common/http';
+import {User } from '../../types/User';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  private API_URL = 'https://raw.githubusercontent.com/oliveirabruno01/Ionicgram/master/fake-server/user/users.json';
+  private API_URL = 'https://raw.githubusercontent.com/oliveirabruno01/Ionicgram/master/fake-server/users.json';
+  
   constructor(private http: HttpClient) { }
 
   getUsers(): Array<User> {
     let res = this.http.get<Array<User>>(this.API_URL);
-    let users: Array<User> = Array<User>();
+    let users: Array<User> = [];
 
     res.subscribe(response => {
       response.map(user => {
@@ -22,7 +23,6 @@ export class UserService {
         users.push(u);
       })
     })
-    
     return users;
   }
 }
