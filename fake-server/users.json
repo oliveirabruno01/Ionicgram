@@ -2,21 +2,21 @@
     {
         "id": 1,
         "name": "fulano",
-        "profile_image": "https://thispersondoesnotexist.com/image"
+        "profile_image": "images/users/user1.jpg"
     },
     {
         "id": 2,
         "name": "ciclano",
-        "profile_image": "https://thispersondoesnotexist.com/image"
+        "profile_image": "images/users/user2.jpg"
     },
     {
         "id": 3,
         "name": "bel.trano",
-        "profile_image": "https://thispersondoesnotexist.com/image"
+        "profile_image": "images/users/user3.jpg"
     },
     {
         "id": 4,
         "name": "traj-ano",
-        "profile_image": "https://thispersondoesnotexist.com/image"
+        "profile_image": "images/users/user4.jpg"
     }
 ]
