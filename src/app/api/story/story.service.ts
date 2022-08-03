@@ -5,7 +5,7 @@ import { Storie } from '../../types/Storie';
 @Injectable({
   providedIn: 'root'
 })
-export class PostService {
+export class StoryService {
   private API_URL = 'https://raw.githubusercontent.com/oliveirabruno01/Ionicgram/master/fake-server/stories.json';
   
   constructor(private http: HttpClient) { }

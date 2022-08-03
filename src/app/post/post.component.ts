@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { PostService } from '../api/post/post.service';
 import { UserService } from '../api/user/user.service';
 import { Post } from '../types/Post';
 import { User } from '../types/User';
@@ -23,8 +24,6 @@ export class PostComponent implements OnInit {
 
   getUserProfileImage(): string {
     let name = this.users[this.post.author_id-1]?.profile_image
-    console.log("name")
-    console.log(name);
     return this.users[this.post.author_id-1]?.profile_image;
   }
 }

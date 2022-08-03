@@ -4,34 +4,34 @@
         "author_id": 1,
         "created_at": "2020-01-01T00:00:00.000Z",
         "updated_at": "2020-01-01T00:00:00.000Z",
-        "image": "https://thiscatdoesnotexist.com"
+        "image": "images/posts/gato1.jpg"
     },
     {
         "id": 2,
         "author_id": 2,
         "created_at": "2020-01-01T00:00:00.000Z",
         "updated_at": "2020-01-01T00:00:00.000Z",
-        "image": "https://thiscatdoesnotexist.com"
+        "image": "images/posts/gato2.jpg"
     },
     {
         "id": 3,
         "author_id": 3,
         "created_at": "2020-01-01T00:00:00.000Z",
         "updated_at": "2020-01-01T00:00:00.000Z",
-        "image": "https://thiscatdoesnotexist.com"
+        "image": "images/posts/gato3.jpg"
     },
     {
         "id": 4,
         "author_id": 1,
         "created_at": "2020-01-01T00:00:00.000Z",
         "updated_at": "2020-01-01T00:00:00.000Z",
-        "image": "https://thiscatdoesnotexist.com"
+        "image": "images/posts/gato4.jpg"
     },
     {
         "id": 5,
         "author_id": 4,
         "created_at": "2020-01-01T00:00:00.000Z",
         "updated_at": "2020-01-01T00:00:00.000Z",
-        "image": "https://thiscatdoesnotexist.com"
+        "image": "images/posts/gato5.jpg"
     }
 ]
