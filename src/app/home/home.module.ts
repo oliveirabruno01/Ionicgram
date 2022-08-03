@@ -11,6 +11,7 @@ import { HeaderModule } from '../header/header.module';
 import { NavbarModule } from '../navbar/navbar.module';
 import { PostModule } from '../post/post.module';
 import { SuggestionCardModule } from '../suggestion-card/suggestion-card.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { SuggestionCardModule } from '../suggestion-card/suggestion-card.module'
     HeaderModule,
     NavbarModule,
     PostModule,
-    SuggestionCardModule
+    SuggestionCardModule,
+    HttpClientModule
   ],
   declarations: [HomePage]
 })

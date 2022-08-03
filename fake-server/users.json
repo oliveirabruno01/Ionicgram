@@ -1,0 +1,9 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "profile_image": "https://via.placeholder.com/150"
+        }
+    ]
+}
