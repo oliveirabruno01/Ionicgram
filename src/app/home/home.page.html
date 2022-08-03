@@ -18,23 +18,9 @@
           </swiper>
         </ion-row>
         <ion-col class="content">
-          <app-post *ngFor="let post of posts" [post]="post"></app-post>
-          <ion-modal #modal trigger="open">
-            <ng-template>
-              <ion-content>
-                <ion-grid>
-                  <ion-row><p><b>Denunciar</b></p></ion-row>
-                  <ion-row><p><b>Deixar de seguir</b></p></ion-row>
-                  <ion-row><p>Adicionar aos Favoritos</p></ion-row>
-                  <ion-row><p>Ir para a publicação</p></ion-row>
-                  <ion-row><p>compartilhar em...</p></ion-row>
-                  <ion-row><p>Copiar link</p></ion-row>
-                  <ion-row><p>Incorporar</p></ion-row>
-                  <ion-row><p>Cancelar</p></ion-row>
-                </ion-grid>
-              </ion-content>
-            </ng-template>
-          </ion-modal>
+          <div class="posts">
+            <app-post *ngFor="let post of posts" [post]="post"></app-post>
+          </div>
         </ion-col>
     </ion-col>
 
