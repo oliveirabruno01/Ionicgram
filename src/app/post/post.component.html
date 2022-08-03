@@ -5,7 +5,7 @@
         <div class="profile" routerLink="/{{getUserName()}}">
           <div class="profile-reels-state">
             <div class="profile-image">
-              <img src="{{getUserProfileImage()}}" alt=""/>
+              <img [src]="'../../assets/' + getUserProfileImage()" alt=""/>
               <ion-label></ion-label>
             </div>
           </div>
@@ -31,7 +31,7 @@
         </ion-modal>
       </ion-row>
     </div>
-    <img src="{{this.post.image}}" alt="" style="width: 512px">
+    <img [src]="'../../assets/' + this.post.image" alt="" style="width: 512px">
   
     <div class="post-info">
       <ion-row class="post-actions">
