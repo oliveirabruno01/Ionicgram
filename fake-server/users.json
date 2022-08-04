@@ -46,5 +46,21 @@
         "followers": 42,
         "following": 42,
         "bio": "Math."
+    },
+    {
+        "id": 7,
+        "name": "limonemo",
+        "profile_image": "images/users/user7.jpg",
+        "followers": 13,
+        "following": 17,
+        "bio": "Lorem ipsum lare ties de at urna condimentum mattis pellentesque."
+    },
+    {
+        "id": 8,
+        "name": "cloridritico",
+        "profile_image": "images/users/user8.jpg",
+        "followers": 13,
+        "following": 17,
+        "bio": "Lorem ipsum lare ties de at urna condimentum mattis pellentesque."
     }
 ]
