@@ -1,8 +1,8 @@
 <ion-row class="suggestion-item">
   <div class="suggestion-row" routerLink="/fulano">
-    <img class="suggestion-profile" src="../../assets/image.jpg" alt="">
+    <img class="suggestion-profile" [src]="'../../assets/' + getUserProfileImage(suggestion.userId)" alt="">
     <ion-label class="ion-align-self-center ion-padding-start">
-    <p><b>fulano</b></p>
+    <p><b>{{getUserName(suggestion.userId) }}</b></p>
     <p>Sugestões para você</p>
   </ion-label>
   </div>

@@ -41,11 +41,7 @@
         <a href="#" class="ion-align-self-center">Ver tudo</a>
       </ion-row>
 
-      <app-suggestion-card></app-suggestion-card>
-      <app-suggestion-card></app-suggestion-card>
-      <app-suggestion-card></app-suggestion-card>
-      <app-suggestion-card></app-suggestion-card>
-      <app-suggestion-card></app-suggestion-card>
+      <app-suggestion-card *ngFor="let suggestion of suggestions" [suggestion]="suggestion"></app-suggestion-card>
 
       <div id="links">
         <a href="">Sobre ∙</a>

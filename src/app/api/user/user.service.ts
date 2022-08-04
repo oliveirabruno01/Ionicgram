@@ -16,16 +16,14 @@ export class UserService {
 
     res.subscribe(response => {
       response.map(user => {
-        setTimeout(() => {
-          let u: User = {} as User;
-          u.id = user.id;
-          u.name = user.name;
-          u.profile_image = user.profile_image;
-          u.followers = user.followers;
-          u.following = user.following;
-          u.bio = user.bio;
-          users.push(u);
-        } , 2000);
+        let u: User = {} as User;
+        u.id = user.id;
+        u.name = user.name;
+        u.profile_image = user.profile_image;
+        u.followers = user.followers;
+        u.following = user.following;
+        u.bio = user.bio;
+        users.push(u);
       })
     })
     return users;
