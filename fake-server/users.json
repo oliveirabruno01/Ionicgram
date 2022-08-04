@@ -30,5 +30,21 @@
         "followers": 32,
         "following": 21,
         "bio": "Nunc sed velit dignissim sodales ut. Tellus at urna condimentum mattis pellentesque."
+    },
+    {
+        "id": 5,
+        "name": "flagran--do",
+        "profile_image": "images/users/user5.jpg",
+        "followers": 13,
+        "following": 17,
+        "bio": "Lorem ipsum lare ties de at urna condimentum mattis pellentesque."
+    },
+    {
+        "id": 6,
+        "name": "fulereno",
+        "profile_image": "images/users/user6.jpg",
+        "followers": 42,
+        "following": 42,
+        "bio": "Math."
     }
 ]
