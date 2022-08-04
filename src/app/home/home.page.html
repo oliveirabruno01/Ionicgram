@@ -5,14 +5,14 @@
         <ion-row id="stories">
           <swiper [slidesPerView]="6" class="swiper">
             <!-- experimental -->
-            <ng-template swiperSlide *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+            <ng-template swiperSlide *ngFor="let storie of stories">
               <div class="reels">
                 <div class="storie-view-state">
                   <div class="storie">
-                    <img src="../../assets/image.jpg" alt="">
+                    <img src="{{ '../../assets/' + getUserProfileImage(storie.author_id) }}" alt="">
                   </div>
                 </div>
-                <h6>{{ x }}</h6>
+                <h6>{{ getUserName(storie.author_id) }}</h6>
               </div>
             </ng-template>
           </swiper>
