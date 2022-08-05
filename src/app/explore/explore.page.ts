@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ExploreService } from '../api/explore/explore.service';
+import { ExplorePost } from '../types/ExplorePost';
 
 @Component({
   selector: 'app-explore',
@@ -7,6 +9,15 @@ import { Component } from '@angular/core';
 })
 export class ExplorePage {
   images: String[] = ['../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg'];
+  posts: Array<ExplorePost>;
 
-  constructor() {}
+  constructor(private explore_service: ExploreService) {}
+
+  ngOnInit() {
+    this.posts = this.getExplorePosts();
+  }
+
+  getExplorePosts(): Array<ExplorePost> {
+    return this.explore_service.getExplorePosts();
+  }
 }

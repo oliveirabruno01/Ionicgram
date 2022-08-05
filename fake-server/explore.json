@@ -1,30 +1,37 @@
 [
     {
         "id": 1,
-        "image": "https://thishorsedoesnotexist.com?ts=1"
+        "author_id": 1,
+        "image": "https://thishorsedoesnotexist.com"
     },
     {
         "id": 2,
-        "image": "https://thishorsedoesnotexist.com?ts=2"
+        "author_id": 2, 
+        "image": "https://thishorsedoesnotexist.com"
     },
     {
         "id": 3,
-        "image": "https://thishorsedoesnotexist.com?ts=3"
+        "author_id": 3, 
+        "image": "https://thishorsedoesnotexist.com"
     }, 
     {
         "id": 4,
-        "image": "https://thishorsedoesnotexist.com?ts=4"
+        "author_id": 4,
+        "image": "https://thishorsedoesnotexist.com"
     }, 
     {
         "id": 5,
-        "image": "https://thishorsedoesnotexist.com?ts=5"
+        "author_id": 5,
+        "image": "https://thishorsedoesnotexist.com"
     },
     {
         "id": 6,
-        "image": "https://thishorsedoesnotexist.com?ts=6"
+        "author_id": 6,
+        "image": "https://thishorsedoesnotexist.com"
     },
     {
         "id": 7,
-        "image": "https://thishorsedoesnotexist.com?ts=7"
+        "author_id": 7, 
+        "image": "https://thishorsedoesnotexist.com"
     }   
 ]

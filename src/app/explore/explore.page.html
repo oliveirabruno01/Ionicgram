@@ -4,8 +4,8 @@
   <ion-grid>
     <ion-row class="ion-padding-horizontal">
       <ion-col size="4" 
-        *ngFor="let image of images">
-        <img src="{{image}}" alt="">
+        *ngFor="let post of posts">
+        <img src="{{post.image}}" alt="" [routerLink]="'/' + post.author_id">
       </ion-col>
     </ion-row>
   </ion-grid>
