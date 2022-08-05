@@ -5,12 +5,12 @@ import { ExplorePost } from 'src/app/types/ExplorePost';
 @Injectable({
   providedIn: 'root'
 })
-export class PostService {
+export class ExploreService {
   private API_URL = 'https://raw.githubusercontent.com/oliveirabruno01/Ionicgram/master/fake-server/explore.json';
   
   constructor(private http: HttpClient) { }
 
-  getPosts(): Array<ExplorePost> {
+  getExplorePosts(): Array<ExplorePost> {
     let res = this.http.get<Array<ExplorePost>>(this.API_URL);
     let explore_posts: Array<ExplorePost> = [];
 
