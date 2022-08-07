@@ -12,8 +12,8 @@
           <h6><b>{{getUserName()}}</b></h6>
         </div>
 
-        <ion-icon id="open" size="small" name="ellipsis-vertical-outline"></ion-icon>
-        <ion-modal #modal trigger="open">
+        <ion-icon id="open{{post?.id}}" size="small" name="ellipsis-vertical-outline"></ion-icon>
+        <ion-modal #modal trigger="open{{post.id}}">
           <ng-template>
             <ion-content>
               <ion-grid>
