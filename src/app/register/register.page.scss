@@ -15,7 +15,7 @@
             border: 1px solid lightgray;
             padding: 2.5rem 3rem .5rem;
 
-            img {
+            ion-image::part(image) {
                 width: 45%;
             }
 
@@ -92,7 +92,7 @@
             }
         }
         #downloads {
-            ion-img {
+            ion-image::part(image) {
                 max-width: 150px;
                 margin-right: 1rem;
             }
@@ -161,7 +161,7 @@ footer {
 
 @media screen and (max-width: 375px){
     #downloads {
-        ion-img {
+        ion-image::part(image) {
             width: 100px;
         }
     }

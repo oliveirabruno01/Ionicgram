@@ -45,7 +45,7 @@ footer {
         
         ion-col {
             width: 33%;
-            img {
+            ion-image::part(image) {
                 max-width: 100%;
                 height: 100%;
             }
@@ -62,7 +62,7 @@ footer {
         margin-top: 5rem;
         width: 946px;
 
-        img {
+        ion-image::part(image) {
             max-width: 256px;
             max-height: 512px;
         }

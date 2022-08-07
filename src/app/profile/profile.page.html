@@ -3,7 +3,7 @@
   <ion-grid>
     <ion-row class="ion-padding" id="profile-info">
       <ion-col size="4">
-        <img src="{{'../../assets/' + getUserProfileImage()}}" alt="">
+        <ion-img src="{{'../../assets/' + getUserProfileImage()}}" alt=""></ion-img>
       </ion-col>
       <ion-col>
         <ion-row id="name-options">
@@ -38,7 +38,7 @@
       <ion-row>
         <ion-col size="4" 
           *ngFor="let post of getPostsByUserId(getUserId())">
-          <img src="{{'../../assets/' + post.image}}" alt="">
+          <ion-img src="{{'../../assets/' + post.image}}" alt=""></ion-img>
       </ion-col>
       </ion-row>
     </ion-row>

@@ -1,7 +1,7 @@
 #profile-info {
     margin-top: 4rem;
 
-    img {
+    ion-img::part(image) {
         width: 150px;
         border-radius: 50%;
     }

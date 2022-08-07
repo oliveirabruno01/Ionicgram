@@ -9,7 +9,7 @@
               <div class="reels">
                 <div class="storie-view-state">
                   <div class="storie">
-                    <img src="{{ '../../assets/' + getUserProfileImage(storie?.author_id) }}" alt="">
+                    <ion-img src="{{ '../../assets/' + getUserProfileImage(storie?.author_id) }}" alt=""></ion-img>
                   </div>
                 </div>
                 <h6>{{ getUserName(storie?.author_id) }}</h6>
@@ -33,7 +33,7 @@
     <ion-col id="lateral">
       <ion-row class="lateral-item">
         <div class="profile-row" routerLink="/fulano">
-          <img class="self-profile" src="../../assets/image.jpg" alt="">
+          <ion-img class="self-profile" src="../../assets/image.jpg" alt=""></ion-img>
           <ion-label class="ion-align-self-center ion-padding-start">
           <p><b>fulano</b></p>
           <p>Fulano Brasileiro</p>
