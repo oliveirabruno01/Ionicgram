@@ -25,4 +25,5 @@ export class PostComponent implements OnInit {
   getUserProfileImage(): string {
     return this.users[this.post.author_id-1]?.profile_image;
   }
+  
 }

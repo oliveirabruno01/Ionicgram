@@ -22,7 +22,11 @@ export class ProfilePage implements OnInit {
 
   ngOnInit() {
     this.users = this.user_service.getUsers();
-    this.posts = this.post_service.getPosts();
+    this.post_service.getPosts()
+      .subscribe(response => {
+        this.posts = response;
+      }
+    );
   }
 
   ionViewDidEnter() {

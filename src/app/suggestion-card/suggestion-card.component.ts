@@ -18,11 +18,11 @@ export class SuggestionCardComponent implements OnInit {
   }
 
   getUserName(user_id: number) {
-    return this.users[user_id-1].name;
+    return this.users[user_id-1]?.name;
   }
 
   getUserProfileImage(user_id: number) {
-    return this.users[user_id-1].profile_image;
+    return this.users[user_id-1]?.profile_image;
   }
 
 }
