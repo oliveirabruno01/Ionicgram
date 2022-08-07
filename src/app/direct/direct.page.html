@@ -27,7 +27,7 @@
         <swiper [slidesPerView]="5" class="swiper">
             <ng-template swiperSlide *ngFor="let x of users">
                 <div class="contact" routerLink="t/{{x?.name}}" routerDirection="root">
-                    <ion-img src="../../assets/{{x?.profile_image}}" alt=""></ion-img>
+                    <img src="../../assets/{{x?.profile_image}}" alt="">
                     <h6>{{x?.name}}</h6>
                 </div>
             </ng-template>
