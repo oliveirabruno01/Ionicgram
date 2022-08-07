@@ -9,7 +9,7 @@
     </ion-col>
     <ion-col size="6" id="chat-name">
         <ion-row routerLink="/{{getPath()}}">
-            <img src="../../assets/image.jpg" alt="">
+            <img src="../../assets/{{getUserProfileImage()}}" alt="">
             <ion-col>
                 <h3>{{getPath()}}</h3>
                 <h6>Online agora</h6>
@@ -61,7 +61,7 @@
                 </ion-row>
                 
                 <div id="messages">
-                    <img src="../../assets/image.jpg" alt="">
+                    <img src="../../assets/{{getUserProfileImage()}}" alt="">
                     <b>{{getPath()}}</b>
                     <h5>Instagram</h5>
                     <p>{{getUserFollowers()}} seguidores · nn publicações</p>
