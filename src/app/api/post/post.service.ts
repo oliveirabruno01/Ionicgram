@@ -10,12 +10,7 @@ export class PostService {
   
   constructor(private http: HttpClient) { }
 
-  getPosts() {
-    let res = this.http.get<Post[]>(this.API_URL);
-    return res;
-  }
-  
-  getNFirstPosts(n: number): Array<Post> {
+  getPostsS(): Array<Post> {
     let res = this.http.get<Array<Post>>(this.API_URL);
     let posts: Array<Post> = [];
 
@@ -28,8 +23,13 @@ export class PostService {
         p.updated_at = post.updated_at;
         p.image = post.image;
         posts.push(p);
-      }).slice(0, n);
+      })
     })
     return posts;
+  }
+  
+  getPosts() {
+    let res = this.http.get<Post[]>(this.API_URL);
+    return res;
   }
 }

@@ -13,7 +13,7 @@ import { PostService } from '../api/post/post.service';
 export class ProfilePage implements OnInit {
   images: String[] = ['../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg', '../../assets/image.jpg'];
   users: User[];
-  posts: Post[];
+  posts: Array<Post>;
   constructor(
     private router: Router, 
     private user_service: UserService,
@@ -22,11 +22,9 @@ export class ProfilePage implements OnInit {
 
   ngOnInit() {
     this.users = this.user_service.getUsers();
-    this.post_service.getPosts()
-      .subscribe(response => {
-        this.posts = response;
-      }
-    );
+
+    this.posts = this.post_service.getPostsS()
+      
   }
 
   ionViewDidEnter() {
