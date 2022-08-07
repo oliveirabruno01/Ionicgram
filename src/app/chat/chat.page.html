@@ -31,11 +31,11 @@
                 </ion-row>
 
                 <div id="chats" >
-                    <ion-row *ngFor="let x of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 1, 1, 1, 1, 1, 1]">
-                        <div class="contact" routerLink="/direct/t/{{x}}" routerDirection="root">
-                            <img src="../../assets/image.jpg" alt=""/>
+                    <ion-row *ngFor="let x of users">
+                        <div class="contact" routerLink="/direct/t/{{x?.name}}" routerDirection="root">
+                            <img src="../../assets/{{x?.profile_image}}" alt=""/>
                             <ion-col class="labels">
-                                <b>fulano</b>
+                                <b>{{x.name}}</b>
                                 <p>Online há n h</p>
                             </ion-col>
                             <ion-col class="camera_action hidden-desktop">
@@ -64,10 +64,10 @@
                     <img src="../../assets/image.jpg" alt=""/>
                     <b>{{getPath()}}</b>
                     <h5>Instagram</h5>
-                    <p>nnn seguidores · nn publicações</p>
+                    <p>{{getUserFollowers()}} seguidores · nn publicações</p>
                     <p>Vocês se seguem mutuamente no Instagram</p>
                     <p>Vocês seguem ciclano</p>
-                    <span>Ver perfil</span>
+                    <span><a href="/{{getPath()}}">Ver perfil</a></span>
                 </div>
                 <ion-row id="chat-container">
                   <ion-item lines="none">
