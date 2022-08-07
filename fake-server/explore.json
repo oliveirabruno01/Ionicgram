@@ -37,7 +37,7 @@
     {
         "id": 8,
         "author_id": 7, 
-        "image": "images/explore-posts/horse7.jpg"
+        "image": "images/explore-posts/horse8.jpg"
     },
     {
         "id": 9,
@@ -67,16 +67,16 @@
     {
         "id": 14,
         "author_id": 7, 
-        "image": "images/explore-posts/horse13.jpg"
+        "image": "images/explore-posts/horse14.jpg"
     },
     {
         "id": 15,
         "author_id": 7, 
-        "image": "images/explore-posts/horse14.jpg"
+        "image": "images/explore-posts/horse15.jpg"
     },
     {
         "id": 16,
         "author_id": 7, 
-        "image": "images/explore-posts/horse15.jpg"
+        "image": "images/explore-posts/horse16.jpg"
     }
 ]
