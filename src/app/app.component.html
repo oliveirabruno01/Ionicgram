@@ -1,3 +1,9 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-content scrollY="false">
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content 
+      refreshingSpinner="circles"></ion-refresher-content>
+    </ion-refresher>
+    <ion-router-outlet></ion-router-outlet>
+  </ion-content>  
 </ion-app>
